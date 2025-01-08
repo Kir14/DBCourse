@@ -12,7 +12,7 @@ public class MainConnect {
             String age, id;
             for (; ; ) {
 
-                System.out.println("Options:\n1. Output all\n2. Add user\n3. Update User\n4. Delete user");
+                System.out.println("Options:\n1. Output all\n2. Add user\n3. Update User\n4. Delete user\n5. Exit");
 
                 switch (scanner.nextLine()) {
                     case "1":
@@ -62,6 +62,8 @@ public class MainConnect {
                             ex.printStackTrace();
                         }
                         break;
+                    case "5":
+                        return;
                     default:
                         System.out.println("Command not found!");
                 }
